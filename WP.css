@@ -12,7 +12,7 @@ body {
   height: 8vh;
   background: rgba(0, 26, 0, 0.75);
   display: flex;
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
   justify-content: center;
   align-items: center;
 }
@@ -60,8 +60,8 @@ body {
   grid-row: 20;
   grid-column: 36;
 }
-.ld h1 , .sp h1 , .mw h1{
-  font-size: 3vh;
+.ld h2 , .sp h2 , .mw h2{
+  font-size: 2vw;
 }
 .ld2 , .sp2 , .mw2{
   background: rgba(0, 0, 0, 0.9);
@@ -75,7 +75,7 @@ ul li , li a{
   list-style-type: none;
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 1vw;
 }
 .ls1 li {
   display: inline-block;
@@ -117,5 +117,35 @@ li img {
 }
  .b1:active {
   border: outset rgb(255, 187, 0) 2px;
-  
+}
+.sc1 article {
+  width: 40vw;
+  height: 30vh;
+  border: 3px solid black;
+  margin-top: 4vh;
+  color: white;
+}
+.sc1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer {
+  bottom: 0;
+  position: fixed;
+  height: 3vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+}
+article img {
+  float: left;
+  height: 30vh;
+  /* box-sizing: border-box; */
+  /* border:1px black solid; */
+}
+.spn1 , .spn1 h1{
+  position: absolute;
+  color: white;
 }
