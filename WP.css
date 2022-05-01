@@ -19,22 +19,40 @@ header {
   row-gap: 20px;
 }
 /* strona startowa */
-.ld {
+.ld , .sp{
   background: rgba(0, 0, 0, 0.85);
-  width: 600px;
-  height: 150px;
-  grid-row: 1;
-  grid-column: 35;
+  width: 32vw;
+  height: 15.2vh;
   color: rgb(238, 238, 238);
   transform: translateY(100%) ;
   transition: 2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ld {
+  grid-row: 1;
+  grid-column: 35;
 }
 .ld2 {
-  background: rgba(0, 0, 0, 0.9);
-  width: 600px;
-  height: 150px;
   grid-row: 6;
   grid-column: 35;
+}
+.sp {
+  grid-row: 8;
+  grid-column: 35;
+}
+.sp2 {
+  grid-row: 13;
+  grid-column: 35;
+}
+.ld h1 , .sp h1{
+  font-size: 3vh;
+}
+.ld2 , .sp2{
+  background: rgba(0, 0, 0, 0.9);
+  width: 32vw;
+  height: 15vh;
   opacity: 0;
   transition: opacity .5s linear;
   color: white;
@@ -45,6 +63,11 @@ ul li , li a{
   color: white;
   font-size: 20px;
 }
+.ls1 li {
+  display: inline-block;
+  margin-top: 3.5vh;
+  margin-left: 3vw;
+}
 li a {
   border-left: 1px rgb(255, 255, 255) solid;
   padding-left: 10px;
@@ -52,21 +75,16 @@ li a {
 li img {
   width: 2vh;
 }
-
-.ld:hover , .ld2:hover ~ .ld{
-  transform: translateY(0);
+.ld:hover , .ld2:hover ~ .ld , .sp:hover, .sp2:hover ~ .sp{
+  transform: translateY(0) ;
   transition: 2s;
-  opacity: 0.3;
+  opacity: 0.5;
+  
 }
-.ld2:hover {
+.ld2:hover , .sp2:hover{
   opacity: 1;
 }
 
-.ls1 li{
-  display: inline-block;
-  margin-top: 3.5vh;
-  margin-left: 4vw;
-}
 
 .b1 {
   align-self: center;
