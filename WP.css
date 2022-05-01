@@ -7,10 +7,17 @@ body {
   height: 100vh;
   width: 100vw;
 }
-header {
+.hd1 , .hd2{
   width: 100%;
   height: 8vh;
-  background-color: rgba(0, 26, 0, 0.75);
+  background: rgba(0, 26, 0, 0.75);
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.hd2 {
+  justify-content: flex-start;
 }
 .dc {
   display: grid;
@@ -18,8 +25,7 @@ header {
   grid-auto-rows: 1vh;
   row-gap: 20px;
 }
-/* strona startowa */
-.ld , .sp{
+.ld , .sp , .mw{
   background: rgba(0, 0, 0, 0.85);
   width: 32vw;
   height: 15.2vh;
@@ -32,24 +38,32 @@ header {
 }
 .ld {
   grid-row: 1;
-  grid-column: 35;
+  grid-column: 36;
 }
 .ld2 {
   grid-row: 6;
-  grid-column: 35;
+  grid-column: 36;
 }
 .sp {
   grid-row: 8;
-  grid-column: 35;
+  grid-column: 36;
 }
 .sp2 {
   grid-row: 13;
-  grid-column: 35;
+  grid-column: 36;
 }
-.ld h1 , .sp h1{
+.mw {
+ grid-row: 15;
+ grid-column: 36; 
+}
+.mw2 {
+  grid-row: 20;
+  grid-column: 36;
+}
+.ld h1 , .sp h1 , .mw h1{
   font-size: 3vh;
 }
-.ld2 , .sp2{
+.ld2 , .sp2 , .mw2{
   background: rgba(0, 0, 0, 0.9);
   width: 32vw;
   height: 15vh;
@@ -68,6 +82,11 @@ ul li , li a{
   margin-top: 3.5vh;
   margin-left: 3vw;
 }
+.ls2 li {
+  display: inline-block;
+  margin-top: 3.5vh;
+  margin-left: 8vw;
+}
 li a {
   border-left: 1px rgb(255, 255, 255) solid;
   padding-left: 10px;
@@ -75,17 +94,14 @@ li a {
 li img {
   width: 2vh;
 }
-.ld:hover , .ld2:hover ~ .ld , .sp:hover, .sp2:hover ~ .sp{
+.ld:hover , .ld2:hover ~ .ld , .sp:hover, .sp2:hover ~ .sp , .mw:hover , .mw2:hover ~ .mw{
   transform: translateY(0) ;
   transition: 2s;
   opacity: 0.5;
-  
 }
-.ld2:hover , .sp2:hover{
+.ld2:hover , .sp2:hover , .mw2:hover{
   opacity: 1;
 }
-
-
 .b1 {
   align-self: center;
   /* margin-right: auto; */
