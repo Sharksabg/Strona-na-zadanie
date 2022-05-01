@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(img/depositphotos_394331724-stock-illustration-texture-military-camouflage-seamless-pattern.jpg);
+  height: 100vh;
+  width: 100vw;
+}
+header {
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(0, 26, 0, 0.75);
+}
+.dc {
+  display: grid;
+  grid-auto-columns: 1vw;
+  grid-auto-rows: 1vh;
+  row-gap: 20px;
+}
+/* strona startowa */
+.ld {
+  background: rgba(0, 0, 0, 0.85);
+  width: 600px;
+  height: 150px;
+  grid-row: 3;
+  grid-column: 35;
+  color: rgb(238, 238, 238);
+  transform: translateY(100%) ;
+  transition: 2s;
+}
+.ld2 {
+  background: rgba(0, 0, 0, 0.9);
+  width: 600px;
+  height: 150px;
+  grid-row: 8;
+  grid-column: 35;
+  opacity: 0;
+  transition: opacity .5s linear;
+  color: white;
+}
+ul li , li a{
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+.ld:hover , .ld2:hover ~ .ld{
+  transform: translateY(0);
+  transition: 2s;
+  opacity: 0.3;
+}
+.ld2:hover {
+  opacity: 1;
+}
+
+
+.b1 {
+  align-self: center;
+  /* margin-right: auto; */
+  margin-left: 2vh;
+  width: 3vw;
+  height: 5vh;
+  border-radius: 25% 50%;
+  background-color: rgb(15, 75, 0);
+  border: inset rgb(255, 187, 0) 2px;
+  box-sizing: border-box;
+  font-size: 3vh;
+  color: rgb(255, 211, 13);
+}
+ .b1:active {
+  border: outset rgb(255, 187, 0) 2px;
+  
+}
