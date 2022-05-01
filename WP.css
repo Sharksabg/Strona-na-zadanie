@@ -23,7 +23,7 @@ header {
   background: rgba(0, 0, 0, 0.85);
   width: 600px;
   height: 150px;
-  grid-row: 3;
+  grid-row: 1;
   grid-column: 35;
   color: rgb(238, 238, 238);
   transform: translateY(100%) ;
@@ -33,7 +33,7 @@ header {
   background: rgba(0, 0, 0, 0.9);
   width: 600px;
   height: 150px;
-  grid-row: 8;
+  grid-row: 6;
   grid-column: 35;
   opacity: 0;
   transition: opacity .5s linear;
@@ -43,6 +43,14 @@ ul li , li a{
   list-style-type: none;
   text-decoration: none;
   color: white;
+  font-size: 20px;
+}
+li a {
+  border-left: 1px rgb(255, 255, 255) solid;
+  padding-left: 10px;
+}
+li img {
+  width: 2vh;
 }
 
 .ld:hover , .ld2:hover ~ .ld{
@@ -54,6 +62,11 @@ ul li , li a{
   opacity: 1;
 }
 
+.ls1 li{
+  display: inline-block;
+  margin-top: 3.5vh;
+  margin-left: 4vw;
+}
 
 .b1 {
   align-self: center;
