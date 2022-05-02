@@ -18,8 +18,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .hd2 {
   justify-content: flex-start;
+  position: fixed;
 }
 .dc {
   display: grid;
@@ -123,14 +125,16 @@ li img {
 .sc1 article {
   width: 40vw;
   height: 30vh;
-  border: 3px solid black;
+  border: 3px solid rgb(2, 61, 0);
   margin-top: 4vh;
   color: white;
+  background-color: rgba(0, 0, 0, 0.60);
 }
 .sc1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-content: center;
 }
 footer {
   bottom: 0;
@@ -151,11 +155,21 @@ footer {
 article > img {
   float: left;
   height: 30vh;
+  width: 15vw;
   /* box-sizing: border-box; */
   /* border:1px black solid; */
 }
 ul > h2 {
   margin-top: 1vh;
+}
+.s1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  align-items: center;
+}
+.s1 h2 {
+  color: rgb(167, 212, 3);
 }
 .spn1{
   color: white;
@@ -173,6 +187,12 @@ ul > h2 {
   transform: translate(0);
   transition: 2s;
 }
-article h3 , article p {
-  margin-left: 50%;
+.sc1 > article > img {
+  border-right: 3px rgb(2, 61, 0) solid;
+}
+#idw {
+  margin-top: 9vh;
+}
+#wtf {
+  margin-left: 18vh;
 }
