@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 body {
   background: url(img/depositphotos_394331724-stock-illustration-texture-military-camouflage-seamless-pattern.jpg);
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 .hd1 , .hd2{
   width: 100%;
@@ -28,7 +30,7 @@ body {
 .ld , .sp , .mw{
   background: rgba(0, 0, 0, 0.85);
   width: 32vw;
-  height: 15.2vh;
+  height: 15vh;
   color: rgb(238, 238, 238);
   transform: translateY(100%) ;
   transition: 2s;
@@ -68,7 +70,7 @@ body {
   width: 32vw;
   height: 15vh;
   opacity: 0;
-  transition: opacity .5s linear;
+  transition: opacity 0.5s linear;
   color: white;
 }
 ul li , li a{
@@ -99,12 +101,12 @@ li img {
   transition: 2s;
   opacity: 0.5;
 }
+
 .ld2:hover , .sp2:hover , .mw2:hover{
   opacity: 1;
 }
 .b1 {
   align-self: center;
-  /* margin-right: auto; */
   margin-left: 2vh;
   width: 3vw;
   height: 5vh;
@@ -139,13 +141,38 @@ footer {
   color: white;
   text-align: center;
 }
-article img {
+.mn ul {
+  margin-left: 0.7vw;
+}
+.mn > ul > li , .mn a{
+  font-size: 2vh;
+  margin-top: 2vh;
+}
+article > img {
   float: left;
   height: 30vh;
   /* box-sizing: border-box; */
   /* border:1px black solid; */
 }
-.spn1 , .spn1 h1{
-  position: absolute;
+ul > h2 {
+  margin-top: 1vh;
+}
+.spn1{
   color: white;
+}
+.mn {
+  width: 25vw;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  transform: translateX(-101%);
+  transition: 2s;
+
+}
+.b1:focus ~ .mn , .mn:hover{
+  transform: translate(0);
+  transition: 2s;
+}
+article h3 , article p {
+  margin-left: 50%;
 }
