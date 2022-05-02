@@ -155,7 +155,7 @@ footer {
 article > img {
   float: left;
   height: 30vh;
-  width: 15vw;
+  width: 18vw;
   /* box-sizing: border-box; */
   /* border:1px black solid; */
 }
@@ -190,9 +190,15 @@ ul > h2 {
 .sc1 > article > img {
   border-right: 3px rgb(2, 61, 0) solid;
 }
+article p {
+  margin-top: 2vh;
+}
 #idw {
   margin-top: 9vh;
 }
 #wtf {
   margin-left: 18vh;
+}
+#porvalo {
+  font-size: 0.6vh;
 }
