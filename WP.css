@@ -156,8 +156,6 @@ article > img {
   float: left;
   height: 30vh;
   width: 18vw;
-  /* box-sizing: border-box; */
-  /* border:1px black solid; */
 }
 ul > h2 {
   margin-top: 1vh;
@@ -196,8 +194,8 @@ article p {
 #idw , #wjl , #okr{
   margin-top: 9vh;
 }
-#wtf , #wtf2, #wtf3{
-  margin-left: 18vh;
+#wtf , #wtf2, #wtf3, #wtf4 , #wtf5, #wtf6{
+  margin-left: 9.5vw;
 }
 #porvalo {
   font-size: 0.6vh;
