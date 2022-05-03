@@ -175,6 +175,10 @@ ul > h2 {
 .spn1{
   margin-top: 2vh;
   color: white;
+  padding: 1vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: solid 2px rgb(2, 61, 0);
+
 }
 .mn {
   width: 25vw;
