@@ -112,7 +112,7 @@ li img {
   margin-left: 2vh;
   width: 3vw;
   height: 5vh;
-  border-radius: 25% 50%;
+  border-radius: 50% 50%;
   background-color: rgb(15, 75, 0);
   border: inset rgb(255, 187, 0) 2px;
   box-sizing: border-box;
@@ -148,8 +148,11 @@ footer {
 .mn ul {
   margin-left: 0.7vw;
 }
+.mn > ul > h2 {
+  font-size: 1.5vw;
+}
 .mn > ul > li , .mn a{
-  font-size: 2vh;
+  font-size: 1vw;
   margin-top: 2vh;
 }
 article > img {
@@ -170,6 +173,7 @@ ul > h2 {
   color: rgb(167, 212, 3);
 }
 .spn1{
+  margin-top: 2vh;
   color: white;
 }
 .mn {
@@ -190,6 +194,11 @@ ul > h2 {
 }
 article p {
   margin-top: 2vh;
+  font-size: 1vw;
+}
+article h3 {
+  font-size: 1.5vw;
+  margin-top: 2vh;
 }
 #idw , #wjl , #okr{
   margin-top: 9vh;
@@ -199,4 +208,60 @@ article p {
 }
 #porvalo {
   font-size: 0.6vh;
+}
+::-webkit-scrollbar {
+  width: 1vw;
+  background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 68, 0, 0.705);
+}
+.anim img {
+  width: 10vh;
+}
+.anim {
+  position: absolute;
+  bottom:5vh;
+  right: 5vw;
+  animation: tank linear 15s infinite;
+}
+@keyframes tank {
+  0% {
+    right: 2vw;
+  }
+  10%{
+    right: 25vw;
+  }
+  20% {
+    right: 50vw;
+  }
+  30%{
+    right: 75vw;
+  }
+  40% {
+    right: 92vw;
+    transform: rotatey(60deg);
+  }
+  50% {
+    right: 92vw;
+    transform: rotatey(120deg);
+  }
+  60% {
+    right: 92vw;
+    transform: rotatey(180deg);
+  }
+  70%{
+    right: 70vw;
+    
+  }
+  80%{
+    right: 50vw;
+  }
+  90% {
+    right: 25vw;
+  }
+  100% {
+    right: 2vw;
+    transform: rotatey(180deg);
+  }
 }
